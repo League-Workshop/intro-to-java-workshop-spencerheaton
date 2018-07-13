@@ -54,14 +54,22 @@ public class RobotTreasureHunt implements KeyEventDispatcher{
 		//      --make a pop-up tell the robot where to go next
 if(robotXLocation == 720 && robotYLocation ==410) {
 		JOptionPane.showMessageDialog(null, "she hands you a note: \n with a good nights rest and belly full \n if you dare, you must go to the skull");		
-			// 8. Give the user subsequent clues at different locations on the image
+}// 8. Give the user subsequent clues at different locations on the image
 		// (pirate robot, swamp, parrots, etc.)
-		
+if(robotXLocation == 200 && robotYLocation ==60) {
+}	JOptionPane.showMessageDialog(null,"you find a note lying on the floor: \n utop a rock lying closely off-shore, \n lies a note promising treasures and more!");
 		// 9.  If the robot is in the final location
 		//     --call the treasureFound() method
-		
+					if(robotXLocation == 420 && robotYLocation ==510) {
+					JOptionPane.showMessageDialog(null,"in a bottle your last clue says: \n nested in the cannon lies your hearts delight, \n worry not, the cannon is broken for it has left the fight");
+	}if(robotXLocation == 700 && robotYLocation ==250) {
+		JOptionPane.showMessageDialog(null,"as you peer into the cannon your heart fills with pleasure, \n as you feast your eyes on a frtune of treasure!");
+	JOptionPane.showMessageDialog(null,"you have beaten the treasure game!");}
 	}
-		}
+	
+		
+		
+		
 
 	private void go() {
 		KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(this);
